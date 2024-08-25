@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+   /* background:linear-gradient(red blue pink) ;  */
+  
+   background: linear-gradient(to left,blue, rgb(189, 31, 57));
+   height:100vh;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 19px;
+  
+   background-repeat: no-repeat;
+}
+form{
+    border-radius:1px ;
+    border-top-color: whitesmoke;
+    border-bottom-color:red;
+    border-right-color:blueviolet;
+    border-left-color:rgb(11, 212, 21);
+    
+    border-style: solid;
+    border-width: 3px;
+    margin: 100px;
+   height: 26vh;
+   width: 40vw;
+
+}
+button{
+    background-color: cornflowerblue;
+    width:70px;
+    margin: 40px;
+}
+button:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <body class="bg-red-700 ">
+    <form >
+    <h1 class=" my-2 text-center bg-violet-900 m-80  h-8 px-3 text-2xl ">LOGIN HERE !</h1>
+    <div class="p-10 text-xl text-center text-green-500 border-red-300 ">
+        Enter the name : <input class="text-black" name="username"><br>
+        <div class="m-2 mr-[42px] ">
+        Enter the password : <input type="password" name="password" class="text-black"> </div>
+    </div>
+    <div  class="text-center">
+    <button class=" my-2 rounded-lg bg-blue-800 px-6 py-5 m-10 w-15 hover:bg-violet-500" button type="submit">Submit</button></div>
+</form>
+  </body>
+  <script>
+     function validateForm(event) {
+            event.preventDefault(); // Prevents the form from submitting
+
+            // Fetch values from the form
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Perform basic validation
+            if (username.trim() === 'thiyagu' && password.trim()==='Alagu1831') {
+              window.location.href="G:/todo/index.html"
+                return;
+            }
+            else{
+              alert('Please enter a valid username or password');
+            }
+            
+            
+                  }
+
+
+  </script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-gray-500">
+    <nav class="">
+        <div class="bg-gradient-to-r from-pink-800 via-red-400 to-blue-500  h-[10vh]">
+            <ul class="flex gap-[4vw] ml-[75vw] p-4 text-2xl">
+                <li>
+                   <a class="hover:text-white" href="./index.html">Home</a></li>
+                   <li><a class="hover:text-white" href="./todo.html">Task</a></li>
+                   <li><a class="hover:text-white" href="./login.html">Logout</a></li>
+                
+            </ul></nav> 
+        </div>
+        <div class="m-32">
+        <div class="text-center text-2xl" >
+    Enter a Task Here : <input id="input">
+
+    <button onclick="add()" class="my-2 border-solid border-2 border-black bg-red-700 px-7 py-2 m-10 w-15 hover:bg-green-700 ">Add</button></div>
+    <ul id="List" class="text-center m-0 text-[20px]">
+        <li class="bg-slate-400 m-0">Today LMS 
+            <button onclick="deletee(event)" class="my-4 bg-green-600 rounded- full mx-4 p-2 ml-[50vw] w-15 hover:bg-red-700">Delete</button>
+        </li>
+
+    </ul>
+
+</div>
+</body>
+<script>
+    var list=document.getElementById("List")
+    var input=document.getElementById("input")
+    function add()
+    {
+        var listitem=document.createElement("li")
+
+        listitem.innerHTML=input.value+"<button onclick='deletee(event)' class='my-4 bg-green-600 rounded- full mx-4 p-2 ml-[50vw] w-15 hover:bg-red-700'>Delete</button>"
+        listitem.style.backgroundColor = "rgb(148 163 184)";
+        listitem.style.margin = "5px";
+        listitem.style.textSize = "5px";
+        list.append(listitem)
+    }
+    function deletee(event){
+        event.target.parentElement.remove()
+    }
+    </script>
+</html>
